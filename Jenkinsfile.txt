@@ -1,5 +1,0 @@
-node {
-  def msbuildFolder = tool 'MSBuild 14.0'
-  echo pwd
-  
-}
