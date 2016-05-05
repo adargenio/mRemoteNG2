@@ -30,18 +30,5 @@ namespace mRemoteNGTests.UI.Controls
             while (_listView.Disposing) ;
             _listView = null;
         }
-
-        [Test]
-        public void a()
-        {
-            _testForm = new TestForm();
-            _testForm.Controls.Add(_listView);
-            _listView.Items.Add(new ListViewItem("mytestitem"));
-            _testForm.Show();
-            ListViewTester listviewTester = new ListViewTester("myTestListView", _testForm);
-            while (true) ;
-            Assert.That(listviewTester.Items.Count, Is.EqualTo(1));
-
-        }
     }
 }
