@@ -4,7 +4,7 @@ node {
 	def vsExtensionsDir = "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
 
 	stage 'Build mRemoteNG'
-	bat "\"${vsToolsDir}\\VsDevCmd.bat\" && msbuild.exe \"${jobDir}@script\\mRemoteV1.sln\""
+	bat "\"${vsToolsDir}\\VsDevCmd.bat\" && msbuild.exe \"${jobDir}@script\\mRemoteV1.sln\" && exit"
 
 	stage 'Run Unit Tests'
 	def nunitTestAdapterPath = "C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\VisualStudio\\14.0\\Extensions"
