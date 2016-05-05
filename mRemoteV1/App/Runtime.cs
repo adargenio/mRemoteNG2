@@ -33,7 +33,7 @@ namespace mRemoteNG.App
 		{
 			// Fix Warning 292 CA1053 : Microsoft.Design : Because type 'Native' contains only 'static' ('Shared' in Visual Basic) members, add a default private constructor to prevent the compiler from adding a default public constructor.
 		}
-
+        asdf
         #region Private Variables
         private static ConnectionList _connectionList;
         private static ConnectionList _previousConnectionList;
