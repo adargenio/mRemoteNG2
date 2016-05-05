@@ -7,5 +7,5 @@ node {
 	bat "\"${vsToolsDir}\\VsDevCmd.bat\" && msbuild.exe \"${jobDir}@script\\mRemoteV1.sln\""
 
 	stage 'Run Unit Tests'
-	bat "\"${vsToolsDir}\\VsDevCmd.bat\" && VSTest.Console.exe /TestAdapterPath:%LOCALAPPDATA%\Microsoft\VisualStudio\14.0\Extensions \"${jobDir}@script\\mRemoteNGTests\\bin\\debug\\mRemoteNGTests.dll\""
+	bat "\"${vsToolsDir}\\VsDevCmd.bat\" && VSTest.Console.exe /TestAdapterPath:%LOCALAPPDATA%\\Microsoft\\VisualStudio\\14.0\\Extensions \"${jobDir}@script\\mRemoteNGTests\\bin\\debug\\mRemoteNGTests.dll\""
 }
